@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h2>Registro empresa</h2>
+
+    <form>
+        <input id="id" placeholder="Id" required>
+        <input id="name" placeholder="Nombre" required>
+        <input id="numberNIT" placeholder="Número de NIT" required>
+        <input id="fundationDate" placeholder="Fecha fundación" type="date" required>
+        <input id="address" placeholder="Direccion" required>
+        <button onclick="saveData()">Registrar</button>
+
+    </form>
+
+    <script>
+        function saveData(){
+            localStorage.setItem("id", document.getElementById("id").value)
+            localStorage.setItem("name" , document.getElementById("name").value)
+            localStorage.setItem("numberNIT", document.getElementById("numberNIT").value)
+            localStorage.setItem("fundationDate", document.getElementById("fundationDate").value)
+            localStorage.setItem("address" , document.getElementById("address").value)
+         
+        }
+    </script>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        input{
+            margin-top: 15px;
+        }
+        button{
+            margin-top: 20px;
+        }
+    </style>
+</body>
+</html>

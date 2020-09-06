@@ -1,0 +1,1 @@
+Igrese en los input los valores necesarios y luego de click en el boton "Registrar" para guardar los datos en el localStorage
